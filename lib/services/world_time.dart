@@ -29,7 +29,7 @@ class WorldTime {
   Future<void> getWeather() async {
     try {
       Response response = await get(
-          'http://api.openweathermap.org/data/2.5/weather?q=$location&appid=$api');
+          'http://api.openweathermap.org/data/2.5/weather?q=$location&units=Metric&appid=$api');
       var results = jsonDecode(response.body);
       this.temp = results['main']['temp'];
       this.description = results['weather'][0]['description'];

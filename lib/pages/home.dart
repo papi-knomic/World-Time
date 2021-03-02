@@ -164,9 +164,7 @@ class _HomeState extends State<Home> {
                         ),
                         ListTile(
                           leading: Icon(
-                            data['isDaytime'] == true
-                                ? FontAwesomeIcons.sun
-                                : FontAwesomeIcons.moon,
+                            FontAwesomeIcons.water,
                             color: data['isDaytime'] == true
                                 ? Colors.amber
                                 : Colors.white,
@@ -203,7 +201,7 @@ class _HomeState extends State<Home> {
                           ),
                           trailing: Text(
                               data['windSpeed'] != null
-                                  ? data['WindSpeed'].toString()
+                                  ? data['windSpeed'].toString()
                                   : 'Loading',
                               style: TextStyle(
                                   color: data['isDaytime'] == true
