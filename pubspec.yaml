@@ -30,7 +30,7 @@ dependencies:
   cupertino_icons: ^1.0.0
   http: ^0.12.2
   intl: ^0.15.8
-  flutter_spinkit: ^4.0.0
+  flutter_spinkit: "^4.0.0"
   font_awesome_flutter: ^8.11.0
 
 dev_dependencies:
